@@ -1,0 +1,25 @@
+.player {
+  align-items: center; //center all items vertically
+  display: flex;
+  justify-content: space-between; //leftover space is now placed in the middle
+};
+
+
+.player__name {
+  font-weight: 300;
+  font-size: 1.8rem;
+
+};
+
+
+.player__stats{
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+
+};
+
+.player__actions{
+  flex-shrink: 0; //so that when name is super super long, we tell flex to not shrink the buttons into a vertical column.
+
+};

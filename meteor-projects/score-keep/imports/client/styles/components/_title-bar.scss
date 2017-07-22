@@ -1,0 +1,11 @@
+
+.title-bar { //styles for title-bar class
+  background: #e35557;
+  color: #ffffff;
+};//use className=title-bar instead of class= for JSX .
+
+
+.title-bar__subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+};

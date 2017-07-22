@@ -1,0 +1,28 @@
+.button {
+  background: transparent;
+  border: 1px solid #555555;
+  color: #555555;
+  cursor: pointer;
+  font-weight: 600;
+  line-height:1; //so that the text within the button " -1 +1 x" will be in center
+  margin-left: 1.3rem;
+  outline: none;
+  padding: 1.3rem; //padding is space inside the button
+  transition: background .2s ease, transform .2 ease; //.2 is the time of transition
+
+
+  &:hover, &:focus { //only in scss for pseudo selectors, //focus is when you use tabs to navigate the buttons
+    background: #e8e8e8,
+  }
+
+  &:active {
+    background: #cccccc;
+    transform: scale(1.1); //when someone clicks it, it gets bigger
+  }
+};
+
+.button--round{
+  border-radius: 50%; //creates a perfect circle
+  height: 4rem;
+  width: 4rem;
+}

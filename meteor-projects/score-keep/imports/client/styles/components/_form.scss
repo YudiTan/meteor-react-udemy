@@ -1,0 +1,10 @@
+.form {
+  display: flex; //sets flexbox
+}
+
+
+.form__input {
+  flex-grow: 1; //we want the flex-inputs (in this case input and button) to fill the space
+  border: 1px solid #e8e8e8;
+  padding: 0 1.3rem;
+}

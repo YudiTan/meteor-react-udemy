@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+//change file format to .scss after meteor add fourseven:scss
+// this is _main because this is a partial of main
+
+
+//Variables
+$green: #e4ede0; //for _item.scss partial
+$green-alt: darken($green, 15%);
+$blue: #dfe7ed;
+$blue-alt: darken($blue, 15%);
+$red: #eddfdf;
+$red-alt: darken($red, 15%);
+
+
+*{
+  margin: 0;
+  padding: 0;
+}; // this is a reset of format.
+
+html {
+  font-size: 62.5%; //62.5% of the default pixel size, which is usually 16, so this = 10 px.
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #555555 ;
+  font-family: Helvetica, Arial, sans-serif; //arial and sans are fall-back fonts
+  font-size: 1.6rem;
+}
+
+input, button, select {
+  font-size: 1.3rem;
+}
+
+
+h1 { //targets h1 tags
+  font-weight: 300;
+  font-size: 2.4rem; //rem is relative to the font-size of the html above, as opposed to pixels. use relative so when zoom in / out it is still perfect
+}
+
+
+@import './components/title-bar'; // import partials
+@import './components/wrapper';
+@import './components/item';
+@import './components/button';
+@import './components/player';
+@import './components/form';
